@@ -1,0 +1,94 @@
+:root {
+    --yellow: #f9d806;
+    --light-yellow: #ffee80;
+    --black: #130f40;
+    --light-color: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --border: .1rem solid rgba(0, 0, 0, .1);
+    --dark-green: #618264;
+    --light-green: #B0D9B1;
+    --semilight-green: #D0E7D2;
+}
+
+.card-body {
+    color: var(--dark-green);
+    flex: 1;
+    padding: 1.25rem;
+    background-color: var(--light-green);
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: var(--semilight-green);
+    margin: 10px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 4px 9%;
+    z-index: 1000;
+    background: var(--dark-green);
+}
+
+.price_predictor {
+    margin: 0;
+    display: flex;
+    position: absolute;
+    top: 6.5vh;
+    width: 100vw;
+    height: 138vh;
+    background-color: var(--semilight-green);
+    justify-content: center;
+}
+
+.row {
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+}
+
+.row-2 {
+    color: var(--semilight-green);
+    background-color: var(--dark-green);
+    display: flex;
+    position: absolute;
+    top: 92%;
+    padding: 12px 20px;
+    width: 44vw;
+    height: 10vh;
+}
+
+#nav-item, #logo {
+    color: var(--semilight-green);
+    text-decoration: none;
+}
+
+button.btn.btn-success.form-control, button.btn.btn-primary.form-control {
+    margin: 4px;
+}
+
+.star-danger {
+    color: #ed0018 !important;
+}
+
+.text-danger {
+    color: var(--dark-green) !important;
+    width: 80vw;
+    position: absolute;
+    margin: none;
+    left: -50%;
+}
+
+#prediction {
+    color: var(--semilight-green) !important;
+}
